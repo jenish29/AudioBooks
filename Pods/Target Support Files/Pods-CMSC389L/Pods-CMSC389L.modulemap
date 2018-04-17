@@ -1,0 +1,6 @@
+framework module Pods_CMSC389L {
+  umbrella header "Pods-CMSC389L-umbrella.h"
+
+  export *
+  module * { export * }
+}
