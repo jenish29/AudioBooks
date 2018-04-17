@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     private let serviceCOnfiguration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: nil)
-  
+
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
       
         
