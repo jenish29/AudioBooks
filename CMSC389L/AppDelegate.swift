@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     private let serviceCOnfiguration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: nil)
-
+    private let configuration = AWSCognitoIdentityUserPoolConfiguration(clientId: "66jfuc5gceim8g2sk39dd9m83b", clientSecret: "nt29e6ms6bor3d7elfpqpmaac5mgdvas7fsqkdltudi5n3ffd3b", poolId: "us-east-1_OYa3tk61h")
+   
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
       
         
