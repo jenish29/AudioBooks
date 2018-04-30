@@ -9,15 +9,16 @@
 import UIKit
 import AWSMobileClient
 import AWSUserPoolsSignIn
+import AWSS3
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
 
-    private let serviceCOnfiguration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: nil)
-    private let configuration = AWSCognitoIdentityUserPoolConfiguration(clientId: "66jfuc5gceim8g2sk39dd9m83b", clientSecret: "nt29e6ms6bor3d7elfpqpmaac5mgdvas7fsqkdltudi5n3ffd3b", poolId: "us-east-1_OYa3tk61h")
-   
+
+    private let configuration = AWSCognitoIdentityUserPoolConfiguration(clientId: "73utalogdfbfl2qo9ll0ibpgdd", clientSecret: "13i1jtdr51uao95rp34h1pfehlv8r58c4vevrup5j7feitdc54ne", poolId: "us-east-1_OYa3tk61h")
+
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
       
         
@@ -29,9 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
+        let serviceConfiguration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: nil)
+        AWSCognitoIdentityUserPool.register(with: serviceConfiguration, userPoolConfiguration: configuration, forKey: "UserPool")
+ 
+        let pool = AWSCognitoIdentityUserPool.init(forKey: "UserPool")
+        let provider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "us-east-1:b0821cf0-7427-40bc-a691-32ce603853bf", identityProviderManager: pool)
+        AWSServiceManager.default().defaultServiceConfiguration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: provider)
         
-        AWSCognitoIdentityUserPool.register(with: serviceCOnfiguration, userPoolConfiguration: configuration, forKey: "UserPool")
-  
+        
         return AWSMobileClient.sharedInstance().interceptApplication(
             application,
             didFinishLaunchingWithOptions: launchOptions)
@@ -60,6 +67,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+        return AWSS3TransferUtility.interceptApplication(
+            application, handleEventsForBackgroundURLSession: identifier,
+            completionHandler: completionHandler)
+    }
 
 }
 

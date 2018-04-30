@@ -12,8 +12,8 @@ import AWSAuthUI
 import AWSUserPoolsSignIn
 import AWSMobileClient
 
-class ViewController: UIViewController, UITextFieldDelegate {
-
+class ViewController: UIViewController, UITextFieldDelegate, AWSCognitoIdentityInteractiveAuthenticationDelegate {
+    private let pool = AWSCognitoIdentityUserPool.init(forKey: "UserPool")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tapGesture)
+        
+        pool.delegate = self
     
     }
     
@@ -32,7 +34,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let pool = AWSCognitoIdentityUserPool.init(forKey: "UserPool")
+
         let currentUser = pool.currentUser()
         
 //        if(currentUser != nil) {
@@ -140,6 +142,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+ 
     
 }
 

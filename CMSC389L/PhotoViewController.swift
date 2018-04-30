@@ -10,10 +10,11 @@ import UIKit
 import AWSS3
 
 class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-
+    private var shapeLayer = CAShapeLayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        progressBar()
         // Do any additional setup after loading the view.
     }
 
@@ -50,40 +51,71 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         dismiss(animated: true, completion: nil)
     }
     
+    private var isUploading = false
     @IBAction func makeMagicHappen(_ sender: Any) {
-        uploadData()
+        if(!isUploading){
+            uploadData()
+        }
     }
     
     func uploadData() {
-        let data = UIImagePNGRepresentation(photoView.image!) as! Data
+        if let data = UIImagePNGRepresentation(photoView.image!) {
+            let expression = AWSS3TransferUtilityUploadExpression()
+            expression.progressBlock = {(task, progress) in
+                DispatchQueue.main.async(execute: {
+                    self.shapeLayer.strokeEnd = CGFloat(progress.fractionCompleted)
+                   
+                })
+            }
         
-        let expression = AWSS3TransferUtilityUploadExpression()
-        expression.progressBlock = {(task, progress) in
-            DispatchQueue.main.async(execute: {
-                print("came here")
-            })
-        }
+            let completionHandler : AWSS3TransferUtilityUploadCompletionHandlerBlock?  =
+            {(task, error) in
+                if let error = error {
+                    
+                }else{
+                    DispatchQueue.main.async(execute: {
+                        self.isUploading = false;
+                        self.photoView.isHidden = false
+                        self.shapeLayer.isHidden = true
+                        self.shapeLayer.strokeEnd = 0
+                    })
+                }
+            }
         
-        let completionHandler : AWSS3TransferUtilityUploadCompletionHandlerBlock?  =
-        {(task, error) in
-            DispatchQueue.main.async(execute: {
-                print("error = " ,error)
-            })
-        }
+            let transferUtility = AWSS3TransferUtility.default()
         
-        let transferUtility = AWSS3TransferUtility.default()
-        
-        transferUtility.uploadData(data, bucket: "cmsc389l-jkanani1", key: "image1", contentType: "image/png", expression: expression, completionHandler: completionHandler).continueWith { (task) -> Any? in
-            if let error = task.error {
-                print(error)
-            }else{
-                print(task.result)
+            transferUtility.uploadData(data, bucket: "cmsc389l-jkanani1", key: "image1", contentType: "image/png", expression: expression, completionHandler: completionHandler).continueWith { (task) -> Any? in
+                if let error = task.error {
+                    print(error)
+                }else{
+                    DispatchQueue.main.async {
+                        self.isUploading = true;
+                        self.photoView.isHidden = true
+                        self.shapeLayer.isHidden = false
+                    }
+                }
+                return nil
             }
             
-            return nil
+          
         }
-        
+    }
     
+    func progressBar() {
+        let center = view.center
+        let circularPath = UIBezierPath(arcCenter: center, radius: 100, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true)
+       
+        
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.path = circularPath.cgPath
+        
+        shapeLayer.strokeColor = UIColor.green.cgColor
+        shapeLayer.lineWidth = 10
+        
+        shapeLayer.strokeEnd = 0
+        
+        view.layer.addSublayer(shapeLayer)
+        shapeLayer.isHidden = true
     }
     
     

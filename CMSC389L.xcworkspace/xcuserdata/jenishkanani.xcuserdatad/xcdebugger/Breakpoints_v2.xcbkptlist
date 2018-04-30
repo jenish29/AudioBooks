@@ -10,13 +10,77 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CMSC389L/LoginViews/ViewController.swift"
-            timestampString = "545685303.78765"
+            timestampString = "546750138.114861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "ViewController"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CMSC389L/PhotoViewController.swift"
+            timestampString = "546750138.114906"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "uploadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CMSC389L/PhotoViewController.swift"
+            timestampString = "546750138.115137"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "uploadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CMSC389L.PhotoViewController.uploadData() -&gt; ()"
+                  moduleName = "CMSC389L"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenishkanani/Documents/XCODE%20PROJECTS/CMSC389L/CMSC389L/PhotoViewController.swift"
+                  timestampString = "546746558.931491"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "1243">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (__ObjC.AWSTask&lt;__ObjC.AWSS3TransferUtilityUploadTask&gt;) -&gt; Swift.Optional&lt;Any&gt; in CMSC389L.PhotoViewController.uploadData() -&gt; ()"
+                  moduleName = "CMSC389L"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jenishkanani/Documents/XCODE%20PROJECTS/CMSC389L/CMSC389L/PhotoViewController.swift"
+                  timestampString = "546746558.934611"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

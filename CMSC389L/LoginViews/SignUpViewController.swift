@@ -193,10 +193,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         
         poolTask.continueWith { (task) -> Any? in
             if(task.error != nil) {
-                let alert = UIAlertController(title: "error", message: task.error?.localizedDescription, preferredStyle: .alert)
-                let action = UIAlertAction(title: "Okay", style: .default, handler: nil)
-                alert.addAction(action)
-                self.present(alert, animated: true, completion: nil)
+                DispatchQueue.main.async(execute: {
+                    let alert = UIAlertController(title: "error", message: "\(((task.error as NSError?)?.userInfo["message"])!)", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Okay", style: .default, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
+                })
             }
             else{
                self.dismissViewController(self)
