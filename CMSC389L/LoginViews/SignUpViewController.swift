@@ -201,7 +201,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 })
             }
             else{
-               self.dismissViewController(self)
+                DispatchQueue.main.async(execute: {
+                   self.dismissViewController(self)
+                })
             }
             return nil
         }

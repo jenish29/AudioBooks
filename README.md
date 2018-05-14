@@ -15,6 +15,9 @@ Rekognition
 Cloud logic
 Mobile hub
 
+architecture Diagram
+https://cloudcraft.co/view/9c7bec4c-5116-459b-bc9d-d97074c8fbf9?key=EMkyuiI5Je5hh41lzdGApA&interactive=true&embed=true
+
 Video Demo
 https://www.youtube.com/watch?v=-P1Bnf6Frrw&feature=youtu.be
 
