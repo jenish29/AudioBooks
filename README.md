@@ -1,4 +1,4 @@
-# Name That Celebrity
+# Name That Celebrity By Jenish Kanani for class CMSC389L at UMD
 
 This will be a ios application using various AWS service to find a celebrity given an image
 It will use,

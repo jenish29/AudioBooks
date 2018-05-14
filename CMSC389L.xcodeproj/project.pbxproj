@@ -155,17 +155,12 @@
 		297FB1D120830F4A000F353B /* CMSC389L */ = {
 			isa = PBXGroup;
 			children = (
+				2983FBC220A9BE3F002C4AF3 /* AWS */,
 				295E882720A5A6E700804278 /* OCRViewController.swift */,
 				297FB1D620830F4A000F353B /* Main.storyboard */,
 				297FB1D920830F4A000F353B /* Assets.xcassets */,
 				297FB1DB20830F4A000F353B /* LaunchScreen.storyboard */,
 				297FB1D220830F4A000F353B /* AppDelegate.swift */,
-				2983FBB720A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.h */,
-				2983FBB320A5BD2B002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.m */,
-				2983FBB820A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.h */,
-				2983FBB420A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.m */,
-				2983FBB620A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.h */,
-				2983FBB520A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.m */,
 				2983FBBC20A5BDC9002C4AF3 /* Bridging_Header.h */,
 				2911A99C2084A2F9009134B6 /* CustomViews */,
 				2911A99A2084A2D1009134B6 /* LoginViews */,
@@ -174,6 +169,20 @@
 				2911A99D2084A313009134B6 /* Helper */,
 			);
 			path = CMSC389L;
+			sourceTree = "<group>";
+		};
+		2983FBC220A9BE3F002C4AF3 /* AWS */ = {
+			isa = PBXGroup;
+			children = (
+				2983FBB720A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.h */,
+				2983FBB320A5BD2B002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.m */,
+				2983FBB820A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.h */,
+				2983FBB420A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.m */,
+				2983FBB620A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.h */,
+				2983FBB520A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.m */,
+			);
+			name = AWS;
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		29F9EB842096CA640087E28A /* New Group */ = {
