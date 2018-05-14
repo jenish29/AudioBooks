@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		290EF70120855FE4002F7121 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 290EF70020855FE4002F7121 /* awsconfiguration.json */; };
 		2911A9932084000B009134B6 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2911A9922084000B009134B6 /* LoginTextField.swift */; };
 		2911A9952084061B009134B6 /* NewAccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2911A9942084061B009134B6 /* NewAccountButton.swift */; };
 		2911A9972084776E009134B6 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2911A9962084776E009134B6 /* LineView.swift */; };
 		2911A99920848DFA009134B6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2911A99820848DFA009134B6 /* SignUpViewController.swift */; };
 		2911A9A02084C175009134B6 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2911A99F2084C175009134B6 /* PasswordTextField.swift */; };
+		295E882820A5A6E700804278 /* OCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295E882720A5A6E700804278 /* OCRViewController.swift */; };
 		297FB1D320830F4A000F353B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297FB1D220830F4A000F353B /* AppDelegate.swift */; };
 		297FB1D520830F4A000F353B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297FB1D420830F4A000F353B /* ViewController.swift */; };
 		297FB1D820830F4A000F353B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297FB1D620830F4A000F353B /* Main.storyboard */; };
@@ -20,20 +20,27 @@
 		297FB1DD20830F4A000F353B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297FB1DB20830F4A000F353B /* LaunchScreen.storyboard */; };
 		297FB1E520831091000F353B /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 297FB1E420831091000F353B /* podfile */; };
 		297FB1EC2083EFCB000F353B /* audiobooksimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 297FB1EB2083EFCB000F353B /* audiobooksimage.jpg */; };
+		2983FBB020A5BD01002C4AF3 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 2983FBAF20A5BD01002C4AF3 /* awsconfiguration.json */; };
+		2983FBB920A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2983FBB320A5BD2B002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.m */; };
+		2983FBBA20A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 2983FBB420A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.m */; };
+		2983FBBB20A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 2983FBB520A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.m */; };
+		2983FBBE20A87192002C4AF3 /* dropdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2983FBBD20A87192002C4AF3 /* dropdown.png */; };
 		29C05D7D20852B3A0055B8E2 /* device-camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C05D7C20852B3A0055B8E2 /* device-camera-icon.png */; };
 		29C05D7F20852E260055B8E2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C05D7E20852E260055B8E2 /* PhotoViewController.swift */; };
 		29C05D81208535310055B8E2 /* 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C05D80208535310055B8E2 /* 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg */; };
+		29F9EB862096DA850087E28A /* 5003.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 29F9EB852096DA850087E28A /* 5003.JPG */; };
+		29F9EB882096F36C0087E28A /* VCMA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F9EB872096F36C0087E28A /* VCMA.swift */; };
 		4531E99267E7DB67D2AFDE7E /* Pods_CMSC389L.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90791226A6851B8DD0F10340 /* Pods_CMSC389L.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01217019AFF64DA542D2BEA3 /* Pods-CMSC389L.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMSC389L.release.xcconfig"; path = "Pods/Target Support Files/Pods-CMSC389L/Pods-CMSC389L.release.xcconfig"; sourceTree = "<group>"; };
-		290EF70020855FE4002F7121 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		2911A9922084000B009134B6 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		2911A9942084061B009134B6 /* NewAccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountButton.swift; sourceTree = "<group>"; };
 		2911A9962084776E009134B6 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		2911A99820848DFA009134B6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2911A99F2084C175009134B6 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		295E882720A5A6E700804278 /* OCRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRViewController.swift; sourceTree = "<group>"; };
 		297FB1CF20830F4A000F353B /* CMSC389L.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMSC389L.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		297FB1D220830F4A000F353B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		297FB1D420830F4A000F353B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,11 +48,22 @@
 		297FB1D920830F4A000F353B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		297FB1DC20830F4A000F353B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		297FB1DE20830F4A000F353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		297FB1E420831091000F353B /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; };
+		297FB1E420831091000F353B /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		297FB1EB2083EFCB000F353B /* audiobooksimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = audiobooksimage.jpg; sourceTree = "<group>"; };
+		2983FBAF20A5BD01002C4AF3 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = ../../../../../Downloads/awsconfiguration.json; sourceTree = "<group>"; };
+		2983FBB320A5BD2B002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSAPI_0FZV066R46_JenishMobileHubClient.m; sourceTree = "<group>"; };
+		2983FBB420A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSAPI_0FZV066R46_RequestSchema.m; sourceTree = "<group>"; };
+		2983FBB520A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSAPI_0FZV066R46_ResponseSchema.m; sourceTree = "<group>"; };
+		2983FBB620A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSAPI_0FZV066R46_ResponseSchema.h; sourceTree = "<group>"; };
+		2983FBB720A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSAPI_0FZV066R46_JenishMobileHubClient.h; sourceTree = "<group>"; };
+		2983FBB820A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSAPI_0FZV066R46_RequestSchema.h; sourceTree = "<group>"; };
+		2983FBBC20A5BDC9002C4AF3 /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		2983FBBD20A87192002C4AF3 /* dropdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropdown.png; sourceTree = "<group>"; };
 		29C05D7C20852B3A0055B8E2 /* device-camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device-camera-icon.png"; sourceTree = "<group>"; };
 		29C05D7E20852E260055B8E2 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		29C05D80208535310055B8E2 /* 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg; sourceTree = "<group>"; };
+		29F9EB852096DA850087E28A /* 5003.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5003.JPG; sourceTree = "<group>"; };
+		29F9EB872096F36C0087E28A /* VCMA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMA.swift; sourceTree = "<group>"; };
 		7BEBCBB758308F1B04D75135 /* Pods-CMSC389L.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMSC389L.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMSC389L/Pods-CMSC389L.debug.xcconfig"; sourceTree = "<group>"; };
 		90791226A6851B8DD0F10340 /* Pods_CMSC389L.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMSC389L.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,8 +111,9 @@
 		2911A99D2084A313009134B6 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				290EF70020855FE4002F7121 /* awsconfiguration.json */,
+				2983FBAF20A5BD01002C4AF3 /* awsconfiguration.json */,
 				297FB1DE20830F4A000F353B /* Info.plist */,
+				29F9EB872096F36C0087E28A /* VCMA.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -102,6 +121,8 @@
 		2911A99E2084A372009134B6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2983FBBD20A87192002C4AF3 /* dropdown.png */,
+				29F9EB852096DA850087E28A /* 5003.JPG */,
 				29C05D80208535310055B8E2 /* 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg */,
 				29C05D7C20852B3A0055B8E2 /* device-camera-icon.png */,
 				297FB1EB2083EFCB000F353B /* audiobooksimage.jpg */,
@@ -131,17 +152,33 @@
 		297FB1D120830F4A000F353B /* CMSC389L */ = {
 			isa = PBXGroup;
 			children = (
-				29C05D7E20852E260055B8E2 /* PhotoViewController.swift */,
+				295E882720A5A6E700804278 /* OCRViewController.swift */,
 				297FB1D620830F4A000F353B /* Main.storyboard */,
 				297FB1D920830F4A000F353B /* Assets.xcassets */,
 				297FB1DB20830F4A000F353B /* LaunchScreen.storyboard */,
 				297FB1D220830F4A000F353B /* AppDelegate.swift */,
+				2983FBB720A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.h */,
+				2983FBB320A5BD2B002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.m */,
+				2983FBB820A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.h */,
+				2983FBB420A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.m */,
+				2983FBB620A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.h */,
+				2983FBB520A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.m */,
+				2983FBBC20A5BDC9002C4AF3 /* Bridging_Header.h */,
 				2911A99C2084A2F9009134B6 /* CustomViews */,
 				2911A99A2084A2D1009134B6 /* LoginViews */,
+				29F9EB842096CA640087E28A /* New Group */,
 				2911A99E2084A372009134B6 /* Images */,
 				2911A99D2084A313009134B6 /* Helper */,
 			);
 			path = CMSC389L;
+			sourceTree = "<group>";
+		};
+		29F9EB842096CA640087E28A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				29C05D7E20852E260055B8E2 /* PhotoViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		52F094ECF3554493D44C2D6A /* Pods */ = {
@@ -187,6 +224,7 @@
 				TargetAttributes = {
 					297FB1CE20830F4A000F353B = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -214,7 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290EF70120855FE4002F7121 /* awsconfiguration.json in Resources */,
+				2983FBBE20A87192002C4AF3 /* dropdown.png in Resources */,
+				2983FBB020A5BD01002C4AF3 /* awsconfiguration.json in Resources */,
+				29F9EB862096DA850087E28A /* 5003.JPG in Resources */,
 				297FB1DD20830F4A000F353B /* LaunchScreen.storyboard in Resources */,
 				29C05D81208535310055B8E2 /* 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg in Resources */,
 				297FB1DA20830F4A000F353B /* Assets.xcassets in Resources */,
@@ -253,27 +293,33 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CMSC389L/Pods-CMSC389L-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAPIGateway/AWSAPIGateway.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSLambda/AWSLambda.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/PBImageView/PBImageView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAPIGateway.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSLambda.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PBImageView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -288,11 +334,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2911A99920848DFA009134B6 /* SignUpViewController.swift in Sources */,
+				29F9EB882096F36C0087E28A /* VCMA.swift in Sources */,
 				2911A9952084061B009134B6 /* NewAccountButton.swift in Sources */,
+				2983FBBB20A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.m in Sources */,
+				295E882820A5A6E700804278 /* OCRViewController.swift in Sources */,
 				2911A9A02084C175009134B6 /* PasswordTextField.swift in Sources */,
+				2983FBB920A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_JenishMobileHubClient.m in Sources */,
 				2911A9932084000B009134B6 /* LoginTextField.swift in Sources */,
 				297FB1D520830F4A000F353B /* ViewController.swift in Sources */,
 				29C05D7F20852E260055B8E2 /* PhotoViewController.swift in Sources */,
+				2983FBBA20A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.m in Sources */,
 				2911A9972084776E009134B6 /* LineView.swift in Sources */,
 				297FB1D320830F4A000F353B /* AppDelegate.swift in Sources */,
 			);
@@ -432,12 +483,15 @@
 			baseConfigurationReference = 7BEBCBB758308F1B04D75135 /* Pods-CMSC389L.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E74D4V7452;
 				INFOPLIST_FILE = "$(SRCROOT)/CMSC389L/Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JKCompany.CMSC389L;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CMSC389L/Bridging_Header.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,12 +502,14 @@
 			baseConfigurationReference = 01217019AFF64DA542D2BEA3 /* Pods-CMSC389L.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E74D4V7452;
 				INFOPLIST_FILE = "$(SRCROOT)/CMSC389L/Helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JKCompany.CMSC389L;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CMSC389L/Bridging_Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

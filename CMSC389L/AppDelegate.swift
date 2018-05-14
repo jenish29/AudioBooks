@@ -10,6 +10,7 @@ import UIKit
 import AWSMobileClient
 import AWSUserPoolsSignIn
 import AWSS3
+import AWSLambda
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -35,9 +36,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AWSCognitoIdentityUserPool.register(with: serviceConfiguration, userPoolConfiguration: configuration, forKey: "UserPool")
  
         let pool = AWSCognitoIdentityUserPool.init(forKey: "UserPool")
-        let provider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "us-east-1:b0821cf0-7427-40bc-a691-32ce603853bf", identityProviderManager: pool)
+        let provider = AWSCognitoCredentialsProvider(regionType: .APSoutheast2, identityPoolId: "us-east-1:b0821cf0-7427-40bc-a691-32ce603853bf", identityProviderManager: pool)
         AWSServiceManager.default().defaultServiceConfiguration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: provider)
         
+         AWSLambdaInvoker.register(with: AWSServiceConfiguration(region: .USEast1, credentialsProvider: nil), forKey: "service")
         
         return AWSMobileClient.sharedInstance().interceptApplication(
             application,

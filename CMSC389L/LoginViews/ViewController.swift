@@ -16,11 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AWSCognitoIdentityI
     private let pool = AWSCognitoIdentityUserPool.init(forKey: "UserPool")
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-    
-        self.previousBigImageViewBottomConstraint = self.bigImageViewBottomConstraint.constant
-        self.previousCreateButtonBottomConstraint = self.createButtonBottomConstraint.constant
-        
+   
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tapGesture)
         

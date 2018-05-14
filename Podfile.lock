@@ -1,4 +1,6 @@
 PODS:
+  - AWSAPIGateway (2.6.16):
+    - AWSCore (= 2.6.16)
   - AWSAuthCore (2.6.16):
     - AWSCore (= 2.6.16)
   - AWSAuthUI (2.6.16):
@@ -11,6 +13,8 @@ PODS:
     - AWSCore (= 2.6.16)
   - AWSCognitoIdentityProviderASF (1.0.1)
   - AWSCore (2.6.16)
+  - AWSLambda (2.6.16):
+    - AWSCore (= 2.6.16)
   - AWSMobileClient (2.6.16):
     - AWSAuthCore (= 2.6.16)
   - AWSS3 (2.6.16):
@@ -18,37 +22,48 @@ PODS:
   - AWSUserPoolsSignIn (2.6.16):
     - AWSAuthCore (= 2.6.16)
     - AWSCognitoIdentityProvider (= 2.6.16)
+  - PBImageView (1.0.3)
 
 DEPENDENCIES:
+  - AWSAPIGateway (~> 2.6.13)
+  - AWSAuthCore (~> 2.6.13)
   - AWSAuthUI (~> 2.6.13)
   - AWSCognito (~> 2.6.13)
+  - AWSLambda
   - AWSMobileClient (~> 2.6.13)
   - AWSS3 (~> 2.6.13)
   - AWSUserPoolsSignIn (~> 2.6.13)
+  - PBImageView
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AWSAPIGateway
     - AWSAuthCore
     - AWSAuthUI
     - AWSCognito
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
     - AWSCore
+    - AWSLambda
     - AWSMobileClient
     - AWSS3
     - AWSUserPoolsSignIn
+    - PBImageView
 
 SPEC CHECKSUMS:
+  AWSAPIGateway: 1bb52c0401f17cb61f9599b8c91037d3bca33ae0
   AWSAuthCore: d0f6fcbe8957c3dc5f67ce4ac198cc1f2696ee17
   AWSAuthUI: 0b44beb72d07305e135848a39e95db6f6e3913bc
   AWSCognito: 459ff17ab8aea9a19d57f2c9051cd124e10ef90d
   AWSCognitoIdentityProvider: d09869af8aafbf4b802000613056e2107e17fbac
   AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
   AWSCore: 314df68684e338310409c6a3b050e28932deb6ff
+  AWSLambda: 1890bb5b223958a0f57ba5070be3f786dfa65d25
   AWSMobileClient: 04b2a1665c3535a47b60a44c9f28e5211139baf3
   AWSS3: 218b24bc68387f0c715fd37168f9db6cbec9d0a7
   AWSUserPoolsSignIn: 6e4f8cad8193a565bc8896270a469316ca18c30d
+  PBImageView: 15d12320ce9b484808dee8caacc456c2dbef8a84
 
-PODFILE CHECKSUM: d7c6e8371298d2a62338d86f7be5007079b12668
+PODFILE CHECKSUM: b9a389a32cfb1d866a78c09a71c3c692e1a5d405
 
 COCOAPODS: 1.5.0
