@@ -25,6 +25,7 @@
 		2983FBBA20A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 2983FBB420A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.m */; };
 		2983FBBB20A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 2983FBB520A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_ResponseSchema.m */; };
 		2983FBBE20A87192002C4AF3 /* dropdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2983FBBD20A87192002C4AF3 /* dropdown.png */; };
+		2983FBC020A9AF1D002C4AF3 /* celebrity.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2983FBBF20A9AF1D002C4AF3 /* celebrity.jpg */; };
 		29C05D7D20852B3A0055B8E2 /* device-camera-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 29C05D7C20852B3A0055B8E2 /* device-camera-icon.png */; };
 		29C05D7F20852E260055B8E2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C05D7E20852E260055B8E2 /* PhotoViewController.swift */; };
 		29C05D81208535310055B8E2 /* 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29C05D80208535310055B8E2 /* 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg */; };
@@ -59,6 +60,7 @@
 		2983FBB820A5BD2C002C4AF3 /* AWSAPI_0FZV066R46_RequestSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSAPI_0FZV066R46_RequestSchema.h; sourceTree = "<group>"; };
 		2983FBBC20A5BDC9002C4AF3 /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
 		2983FBBD20A87192002C4AF3 /* dropdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropdown.png; sourceTree = "<group>"; };
+		2983FBBF20A9AF1D002C4AF3 /* celebrity.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = celebrity.jpg; sourceTree = "<group>"; };
 		29C05D7C20852B3A0055B8E2 /* device-camera-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device-camera-icon.png"; sourceTree = "<group>"; };
 		29C05D7E20852E260055B8E2 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		29C05D80208535310055B8E2 /* 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				2983FBBD20A87192002C4AF3 /* dropdown.png */,
+				2983FBBF20A9AF1D002C4AF3 /* celebrity.jpg */,
 				29F9EB852096DA850087E28A /* 5003.JPG */,
 				29C05D80208535310055B8E2 /* 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg */,
 				29C05D7C20852B3A0055B8E2 /* device-camera-icon.png */,
@@ -259,6 +262,7 @@
 				29C05D81208535310055B8E2 /* 0497bfe9d8128a84b5bdccfc8a90a1a8.jpg in Resources */,
 				297FB1DA20830F4A000F353B /* Assets.xcassets in Resources */,
 				297FB1EC2083EFCB000F353B /* audiobooksimage.jpg in Resources */,
+				2983FBC020A9AF1D002C4AF3 /* celebrity.jpg in Resources */,
 				29C05D7D20852B3A0055B8E2 /* device-camera-icon.png in Resources */,
 				297FB1E520831091000F353B /* podfile in Resources */,
 				297FB1D820830F4A000F353B /* Main.storyboard in Resources */,

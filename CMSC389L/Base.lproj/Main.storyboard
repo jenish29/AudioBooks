@@ -564,7 +564,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ow-qN-ine">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="celebrity.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5Ow-qN-ine">
                                 <rect key="frame" x="0.0" y="106" width="375" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lct-87-hdb" customClass="NewAccountButton" customModule="CMSC389L" customModuleProvider="target">
@@ -880,10 +880,11 @@
         <image name="0497bfe9d8128a84b5bdccfc8a90a1a8.jpg" width="1024" height="1024"/>
         <image name="5003.JPG" width="386" height="256"/>
         <image name="audiobooksimage.jpg" width="599" height="280"/>
+        <image name="celebrity.jpg" width="610" height="1054"/>
         <image name="device-camera-icon.png" width="256" height="256"/>
         <image name="dropdown.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6Yp-M5-JdK"/>
+        <segue reference="B1M-zR-Red"/>
     </inferredMetricsTieBreakers>
 </document>
